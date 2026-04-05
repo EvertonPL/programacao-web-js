@@ -13,7 +13,7 @@ app.get('/adicionar/:id/:nome/:qtd', (req, res) => {
 // Rota: Listar produtos
 app.get('/listar', (req, res) => {
     const produtos = estoque.listar();
-    res.json(produtos); // Retorna a lista em formato JSON (mais limpo para APIs)
+    res.json(produtos);
 });
 
 // Rota: Remover produto
